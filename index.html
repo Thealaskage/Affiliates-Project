@@ -10,62 +10,63 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <h1 class="title">Login</h1>
     <main>
         <form class="formulario" id="affillier-form" action="">
-            <!--First Name-->
+            <!--FirstName-->
             <div class="formulario__grupo" id="grupo__first-name">
-                <label class="formulario__label" for="first-name">First Name</label>
                 <div class="formulario__grupo-input">
                     <input class="formulario__input" type="text" id="first-name" name="first-name" placeholder="First Name"/>
                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
-                <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener letras y espacios.</p>
+                <p class="formulario__input-error">Se permiten máximo 16 dígitos, solo letras</p>
             </div>
-            <!--Last Name-->
+
+            <!--LastName-->
             <div class="formulario__grupo" id="grupo__last-name">
-                <label class="formulario__label" for="last-name">Last Name</label>
                 <div class="formulario__grupo-input">
                     <input class="formulario__input" type="text" id="last-name" name="last-name" placeholder="Last Name"/>
                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
-                <p class="formulario__input-error">El apellido tiene que ser de 4 a 16 dígitos y solo puede contener letras y espacios.</p>
+                <p class="formulario__input-error">Se permiten máximo 16 dígitos, solo letras</p>
             </div>
-            <!--Password-->
-            <div class="formulario__grupo" id="grupo__password">
-                <label class="formulario__label" for="password">Password</label>
-                <div class="formulario__grupo-input">
-                    <input class="formulario__input" type="password" id="password" name="password" placeholder=""/>
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
-            </div>
-            <!--Confirm Password-->
-            <div class="formulario__grupo" id="grupo__password2">
-                <label class="formulario__label" for="password2">Confirm Password</label>
-                <div class="formulario__grupo-input">
-                    <input class="formulario__input" type="password" id="password2" name="password2" placeholder=""/>
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">Las contraseñas no coinciden.</p>
-            </div>
+
             <!--Phone-->
             <div class="formulario__grupo" id="grupo__phone">
-                <label class="formulario__label" for="phone">Phone</label>
                 <div class="formulario__grupo-input">
                     <input class="formulario__input" type="text" id="phone" name="phone" placeholder="Phone"/>
                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
                 <p class="formulario__input-error">El telefono tiene que tener 9 dígitos.</p>
             </div>
+
             <!--DNI-->
             <div class="formulario__grupo" id="grupo__DNI">
-                <label class="formulario__label" for="DNI">DNI</label>
                 <div class="formulario__grupo-input">
                     <input class="formulario__input" type="text" id="DNI" name="DNI" placeholder="DNI"/>
                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
                 <p class="formulario__input-error">El DNI tiene que tener 8 números</p>
             </div>
+
+            <!--Password-->
+            <div class="formulario__grupo" id="grupo__password">
+                <div class="formulario__grupo-input">
+                    <input class="formulario__input" type="password" id="password" name="password" placeholder="Password"/>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña tiene que tener de 4 a 12 dígitos.</p>
+            </div>
+
+            <!--Password2-->
+            <div class="formulario__grupo" id="grupo__password2">
+                <div class="formulario__grupo-input">
+                    <input class="formulario__input" type="password" id="password2" name="password2" placeholder="Repeat Password"/>
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Repita la contraseña</p>
+            </div>
+
             <!-- Grupo: Terminos y Condiciones -->
 			<div class="formulario__grupo" id="grupo__terms">
 				<label class="formulario__label">
@@ -79,7 +80,7 @@
 			</div>
 
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<button class="formulario__btn" id="btn-save-affillier">Save</button>
+				<button class="formulario__btn" id="btn-save-affillier" type="submit">Save</button>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
 
@@ -87,7 +88,11 @@
         
         <div id="affilliers-container"></div>
     </main>
-    
+    <footer>
+        <div class="container">
+            <p class="footer-text">LoginApp v1.0 | Alaskage | © 2023 Todos los derechos reservados</p>
+        </div>
+    </footer>
         <script type="module" src="index.js"></script>
         <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>

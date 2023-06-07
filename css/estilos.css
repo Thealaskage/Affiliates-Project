@@ -2,6 +2,16 @@
 	box-sizing: border-box;
 }
 
+.title {
+	text-align: center;
+	font-size: 36px;
+	color: #444;
+	margin-bottom: 20px;
+	display: block;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 5px;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	background: #E5E5E5;
@@ -164,6 +174,21 @@ main {
 	}
 }
 
+/* Estilos para el footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text {
+    margin: 0;
+}
 
 
 
