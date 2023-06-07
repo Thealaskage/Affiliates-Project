@@ -13,15 +13,15 @@ import {
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyBXJOEaEHdulFsBmikU_CsMm4pPYrdZXec",
-  authDomain: "pizzeria-delicia-60823.firebaseapp.com",
-  projectId: "pizzeria-delicia-60823",
-  storageBucket: "pizzeria-delicia-60823.appspot.com",
-  messagingSenderId: "467980380873",
-  appId: "1:467980380873:web:8790a57c73b76537403b18",
-  measurementId: "G-CKJT0TPVF3",
-};
+// const firebaseConfig = {
+//   apiKey: "",
+//   authDomain: "",
+//   projectId: "",
+//   storageBucket: "",
+//   messagingSenderId: "",
+//   appId: "",
+//   measurementId: "",
+// };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
